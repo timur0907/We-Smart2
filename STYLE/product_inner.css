@@ -1,0 +1,603 @@
+@import url(fonts.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat";
+    font-weight: 400; 
+}
+
+.body.active {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1326px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/* header start */
+
+.burger {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-shadow: 0px 4px 24px rgba(28, 44, 68, 0.12);
+    background-color: #fff;
+}
+
+
+
+
+.nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.header_list {
+    display: flex;
+    gap: 32px;
+}
+
+.link {
+    color: #151628;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.7s;
+}
+.link:hover {
+    color: #2B63E3;
+}
+
+
+/* start */
+
+.information {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: 80px ;
+}
+
+.product_img {
+    width: 636px;
+    height: 480px;
+    object-fit: cover;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #151628;
+    line-height: 40px;
+    margin-bottom: 16px;
+}
+
+.desc {
+    color: #70798B;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    max-width: 636px;
+    width: 100%;
+}
+
+.deg {
+    font-weight: 600;
+    color: #151628;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 256px;
+    width: 100%;
+}
+
+.info_mini {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1076px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.mini_card {
+    max-width: 196px;
+    width: 100%;
+    height: 240px;
+    padding: 40px 12px;
+    background: #F3F4F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.card_icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 16px;
+}
+
+.card_desc {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    line-height: 24px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 440px);
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.gallery_img:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.comparison {
+    margin-bottom: 80px;
+    display: flex;
+    width: 100%;
+    gap: 24px;
+}
+.comparison_card {
+    max-width: 416px;
+    width: 100%;
+}
+
+.comparison_card-img {
+    width: 100%;
+    height: 416px;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.comparison_card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #151628;
+    margin-bottom: 16px;
+}
+
+.comparison_character, .comparison_lumen, .comparison_distance, .comparison_time {
+    background: #F3F4F6;
+    padding: 46px 24px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+.character_desc, .lumen_desc, .distance_desc, .time_desc {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #151628;
+}
+
+.character_icon, .lumen_icon, .distance_icon, .time_icon {
+    width: 80px;
+    height: 80px;
+}
+
+.comparison_lumen, .comparison_distance, .comparison_time {
+    padding: 60px 24px;
+}
+
+.comparison_buy {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buy_button {
+    background: #2B63E3;
+    padding: 12px 24px;
+    border-radius: 4px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.products_arrow {
+    margin-left: 10px;
+}
+
+.price {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #151628;
+}
+
+.benefits {
+    margin-bottom: 80px;
+}
+
+.benefits_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #151628;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.benefit_card {
+    max-width: 636px;
+    width: 100%;
+    background: #F3F4F6;
+    padding: 79px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.benefit_icon {
+    width: 80px;
+    height: 80px;
+}
+
+.benefit_info-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #151628;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.benefit_info-desc {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #70798B;
+}
+
+.benefits_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+
+.made {
+    text-align: center;
+} 
+
+.germany {
+    border-radius: 2px;
+    margin-bottom: 24px;
+}
+
+.made_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #151628;
+    margin-bottom: 16px;
+}
+
+.made_desc {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #151628;
+}
+
+/* table */ 
+
+.table {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.table_title {
+    font-weight: 700;
+    font-size:  32px;
+    line-height: 40px;
+    color: #151628;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.table_head, .table_body {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+}
+
+.table_head, .table_body:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.table_head-column {
+    background: #46475F;
+    color: #fff;
+} 
+
+.table_body-column {
+    background: #F3F4F6;
+    color: #151628;
+}
+
+.table_head-column, .table_body-column {
+        width: 140px;
+        height: 96px;
+        border-radius: 4px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
+.table_body-column:nth-child(1), .table_head-column:nth-child(1) {
+    width: 180px;
+}
+
+.table_body-column:nth-child(6), .table_head-column:nth-child(6) {
+    width: 220px;
+    padding: 0 33px;
+}
+
+
+/* media */
+
+
+@media(max-width:1024px) {
+    /* footer */
+
+    .contacts {
+        flex-wrap: wrap;
+    }
+
+    .email {
+        width: 100%;
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+        height: 360px;
+    }
+
+    .form {
+        margin: 0 auto;
+        width: 43%;
+    }
+
+    .nav.foo_nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .submit_button {
+        width: 174px;
+        margin: 0 auto;
+    }
+    .second_line {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+    .footer_adress {
+        width: 100%;
+        text-align: center;
+    }
+    .third_line {
+        text-align: center;
+    }
+
+    /*  */
+    .gallery {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:768px) {
+    .nav.foo_nav {
+        justify-content: center;
+    }
+    .header_list.foo {
+        display: none;
+    }
+    /* header start */
+    .header_list {
+        display: none;
+        position: absolute;
+        display: flex;    
+        flex-direction: column;
+        right: -100%;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        background: #fff;
+        width: 50%;
+        transition: all 0.9s;
+}
+
+    .header_list.active {
+        display: flex;
+        right: 0;
+    }
+
+    .burger {
+        width: 55px;
+        height: 55px;
+        background-color: #151628;
+        display: block;
+        transform: rotate(-180deg);
+        transition: all 0.5s;
+        padding: 5px 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .line {
+        width: 40px;
+        height: 5px;
+        display: block;
+        background: #fff;
+        transition: all 0.5s;
+    }
+
+    .burger.active {
+        position: absolute;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+        top: 15px;
+        right: 20px;
+        transform: rotate(0deg);
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .burger.active .line:nth-child(3) {
+        display: none;
+    }
+
+    .burger.active .line:nth-child(1) {
+        transform: rotate(45deg);
+        position: absolute;
+    }
+    .burger.active .line:nth-child(2) {
+        transform: rotate(-45deg);
+        position: absolute;
+    }
+
+    /* header end */
+
+    .information {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center ;
+    }
+
+    .comparison {
+        display: none;
+    }
+    .info_mini {
+        flex-wrap: wrap;
+    }
+    .benefits_cards {
+        justify-content: center;
+    }
+    .table {
+        display: none;
+    }
+
+}
+@media(max-width:480px) {
+
+    .email {
+        padding: 80px 0 80px 0;
+    }
+    .form  {
+        width: 80%;
+    }
+    .telegramm, .instagramm, .facebook {
+        flex-direction: column;
+    }
+    .third_line {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .tel {
+        margin-right: 0;
+    }
+
+    .product_img {
+        width: 450px;
+        height: 450px;
+    }
+}
+
+@media(max-width:426px) {
+    .product {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .product_img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media(max-width:376px) {
+    .product_img {
+        width: 350px;
+        height: 350px;
+    }
+    .benefit_card {
+        flex-direction: column;
+    }
+    .benefit_info-title, .benefit_info-desc {
+        text-align: center;
+    }
+}
+
+@media(max-width:320px) {
+    .media {
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+    }
+    .telegramm, .instagramm, .facebook {
+        gap: 10px;
+    }
+    .product_img {
+        width: 300px;
+        height: 300px;
+    }
+}
